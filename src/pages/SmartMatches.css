@@ -1,0 +1,169 @@
+.sl-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 70px 30px;
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  clear: both;
+}
+
+.sl-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.sl-tag {
+  color: #684ee8;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.sl-header h1 {
+  font-size: 36px;
+  color: #171936;
+  margin: 15px 0;
+}
+
+.sl-header p {
+  color: #777b91;
+  font-size: 16px;
+}
+
+.sl-refresh {
+  background: #654de8;
+  color: white;
+  border: none;
+  padding: 13px 25px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.sl-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 25px;
+  width: 100%;
+}
+
+.sl-card {
+  width: 100%;
+  box-sizing: border-box;
+  background: white;
+  border: 1px solid #e8e8f2;
+  border-radius: 16px;
+  padding: 28px;
+  box-shadow: 0 5px 25px rgba(30, 30, 70, 0.07);
+}
+
+.sl-score {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.sl-score strong {
+  font-size: 32px;
+  color: #16a34a;
+}
+
+.sl-items {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.sl-item {
+  min-width: 0;
+  padding: 22px;
+  border-radius: 12px;
+  overflow-wrap: anywhere;
+}
+
+.sl-lost {
+  background: #fff1f2;
+}
+
+.sl-found {
+  background: #ecfdf5;
+}
+
+.sl-item h3 {
+  font-size: 18px;
+}
+
+.sl-item p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #666b80;
+}
+
+.sl-reasons {
+  margin-top: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.sl-reasons h4 {
+  width: 100%;
+}
+
+.sl-reasons span {
+  background: #eff6ff;
+  color: #2454b8;
+  padding: 9px 13px;
+  border-radius: 7px;
+  font-size: 13px;
+}
+
+.sl-note {
+  color: #85899a;
+  font-size: 13px;
+  margin-top: 22px;
+}
+
+.sl-empty {
+  text-align: center;
+  background: #f8f8ff;
+  border-radius: 15px;
+  padding: 55px 20px;
+}
+
+.sl-empty-icon {
+  font-size: 45px;
+}
+
+.sl-message,
+.sl-error {
+  text-align: center;
+  padding: 25px;
+}
+
+.sl-error {
+  color: #dc2626;
+}
+
+@media (max-width: 650px) {
+  .sl-container {
+    padding: 45px 15px;
+  }
+
+  .sl-header h1 {
+    font-size: 28px;
+  }
+
+  .sl-items {
+    grid-template-columns: 1fr;
+  }
+
+  .sl-score {
+    align-items: flex-start;
+    gap: 12px;
+    flex-direction: column;
+  }
+}
